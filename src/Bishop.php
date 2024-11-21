@@ -25,4 +25,3 @@ class Bishop extends Figure {
         }
         return true;
     }
-}
