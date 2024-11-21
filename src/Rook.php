@@ -23,3 +23,9 @@ class Rook extends Figure {
             if ($item && $item !== $this) {
                 return false;
             }
+            $start_col += $step_col;
+            $start_row += $step_row;
+        }
+        return true;
+    }
+}
