@@ -1,0 +1,9 @@
+<?php
+require_once('color.php');
+require_once('IFigure.php');
+require_once('Pawn.php');
+require_once('Rook.php');
+require_once('Knight.php');
+require_once('Bishop.php');
+require_once('King.php');
+require_once('Queen.php');
