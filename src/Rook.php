@@ -9,3 +9,10 @@ class Rook extends Figure {
         if ($from_col != $to_col && $from_row != $to_row) {
             return false;
         }
+        if ($from_col == $to_col) {
+            $step_col = 0;
+            $step_row = $from_row > $to_row ? -1 : 1;
+        } else {
+            $step_row = 0;
+            $step_col = $from_col > $to_col ? -1 : 1;
+        }
