@@ -16,3 +16,10 @@ class Rook extends Figure {
             $step_row = 0;
             $step_col = $from_col > $to_col ? -1 : 1;
         }
+        $start_col = $from_col;
+        $start_row = $from_row;
+        while ($start_col != $to_col || $start_row != $to_row) {
+            $item = $board->getItem($start_row, $start_col);
+            if ($item && $item !== $this) {
+                return false;
+            }
